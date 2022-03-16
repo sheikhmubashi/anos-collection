@@ -9,8 +9,10 @@ import Image from 'next/image'
 import { Grid, Link, List, ListItem, Typography, Card, Button } from "@material-ui/core";
 import Layout from '../../components/Layout';
 import useStyles from '../../utils/styles';
+import { useRouter } from 'next/router';
 
 export default function ProductScreen(props) {
+  const router = useRouter();
   const { dispatch } = useContext(Store);
   const { product } = props;
   const classes = useStyles();
@@ -24,6 +26,7 @@ export default function ProductScreen(props) {
       return;
     }
     dispatch({ type: 'CART_ADD_ITEM', payload: { ...product, quantity: 1 } });
+    router.push('/cart')
   };
 
   return (
