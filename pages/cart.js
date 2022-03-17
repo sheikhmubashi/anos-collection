@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useReducer } from 'react';
 import Layout from '../components/Layout';
 import dynamic from 'next/dynamic';
 import { Store } from '../utils/Store';
@@ -22,8 +22,10 @@ import {
     List,
     ListItem,
 } from '@material-ui/core';
+import { useRouter } from 'next/router';
 
 const CartScreen = () => {
+    const router = useRouter();
     const { state, dispatch } = useContext(Store);
     const {
         cart: { cartItems },
@@ -39,6 +41,9 @@ const CartScreen = () => {
     const removeItemHandler = (item) => {
         dispatch({ type: 'CART_REMOVE_ITEM', payload: item });
     };
+    const checkoutHandler = () => {
+        router.push('/shipping')
+    }
     return (
         <Layout title="Shopping Cart">
             <Typography component="h1" variant="h1">
@@ -129,7 +134,7 @@ const CartScreen = () => {
                                     </Typography>
                                 </ListItem>
                                 <ListItem>
-                                    <Button variant="contained" color="primary" fullWidth>
+                                    <Button variant="contained" color="primary" fullWidth onClick={checkoutHandler}>
                                         Check Out
                                     </Button>
                                 </ListItem>
