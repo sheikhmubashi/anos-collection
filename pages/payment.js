@@ -18,7 +18,7 @@ import {
 import { useSnackbar } from 'notistack';
 
 export default function Payment() {
-    const { enqueueSnackbar, closeSnackbar } = useSnackbar();
+    const { enqueueSnackbar, closeSnackbar } = useSnackbar(); 
     const classes = useStyles();
     const router = useRouter();
     const [paymentMethod, setPaymentMethod] = useState('');

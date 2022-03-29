@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
       <StoreProvider>
         <Component {...pageProps} />
       </StoreProvider>
-    </SnackbarProvider>
+    </SnackbarProvider> 
   );
 }
 
