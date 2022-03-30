@@ -11,7 +11,7 @@ import Layout from '../components/Layout';
 import useStyles from '../utils/styles';
 import axios from 'axios';
 import { useRouter } from 'next/router';
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect } from 'react'; 
 import { Store } from '../utils/Store';
 import Cookies from 'js-cookie';
 import { Controller, useForm } from 'react-hook-form';

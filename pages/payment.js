@@ -53,7 +53,7 @@ export default function Payment() {
                 </Typography>
                 <List>
                     <ListItem>
-                        <FormControl component="fieldset">
+                        <FormControl component="fieldset"> 
                             <RadioGroup
                                 aria-label="Payment Method"
                                 name="paymentMethod"
