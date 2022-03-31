@@ -25,7 +25,7 @@ import useStyles from '../utils/styles';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 
-function Layout({ title, description, children }) {
+function Layout({ title, description, children }) { 
   const router = useRouter();
   const { state, dispatch } = useContext(Store);
   const { darkMode, cart, userInfo } = state;
