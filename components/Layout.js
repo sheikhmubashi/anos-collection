@@ -24,8 +24,8 @@ import React from 'react';
 import useStyles from '../utils/styles';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import Image from 'next/image';
-import logo from '../hfshoplogo.jpg'
+// import Image from 'next/image';
+// import logo from '../hfshoplogo.jpg'
 function Layout({ title, description, children }) {
   const router = useRouter();
   const { state, dispatch } = useContext(Store);
@@ -87,12 +87,12 @@ function Layout({ title, description, children }) {
           <Toolbar>
             <NextLink href="/" passHref>
               <Link>
-                {/* <Typography className={classes.brand}>
-                  Anos Collection
-                </Typography> */}
                 <Typography className={classes.brand}>
-                  <Image src={\} alt="logo" width={"200"} height={"60"} />
+                  Anos Collection
                 </Typography>
+                {/* <Typography className={classes.brand}>
+                  <Image src={logo} alt="logo" width={"200"} height={"60"} />
+                </Typography> */}
               </Link>
             </NextLink>
             <div className={classes.grow}></div>
