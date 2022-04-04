@@ -23,7 +23,6 @@ import {
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import useStyles from '../../utils/styles';
-import CheckoutWizard from '../../components/CheckoutWizard';
 import { useSnackbar } from 'notistack';
 import { getError } from '../../utils/error';
 import Cookies from 'js-cookie';
@@ -90,7 +89,6 @@ function Order({ params }) {
 
     return (
         <Layout title={`Order ${orderId}`}>
-            <CheckoutWizard activeStep={3}></CheckoutWizard>
             <Typography component="h1" variant="h1">
                 Order {orderId}
             </Typography>
@@ -110,7 +108,7 @@ function Order({ params }) {
                                 </ListItem>
                                 <ListItem>
                                     {shippingAddress.fullName}, {shippingAddress.address},{' '}
-                                    {shippingAddress.city}, {shippingAddress.postalCode},{' '}
+                                    {shippingAddress.city},{shippingAddress.contactNumber}, {shippingAddress.postalCode},{' '}
                                     {shippingAddress.country}
                                 </ListItem>
                                 <ListItem>
@@ -237,6 +235,9 @@ function Order({ params }) {
                                             <Typography align="right">
                                                 <strong>Rs: {totalPrice}</strong>
                                             </Typography>
+                                        </Grid>
+                                        <Grid item xs={12}>
+                                            <Typography><strong>shipping charges can be changed based on product weight/volume</strong></Typography>
                                         </Grid>
                                     </Grid>
                                 </ListItem>

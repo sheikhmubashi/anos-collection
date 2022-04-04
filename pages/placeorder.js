@@ -103,7 +103,7 @@ function PlaceOrder() {
                             </ListItem>
                             <ListItem>
                                 {shippingAddress.fullName}, {shippingAddress.address},{' '}
-                                {shippingAddress.city}, {shippingAddress.postalCode},{' '}
+                                {shippingAddress.city},{shippingAddress.contactNumber},{shippingAddress.postalCode},{' '}
                                 {shippingAddress.country}
                             </ListItem>
                         </List>

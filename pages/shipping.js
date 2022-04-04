@@ -33,20 +33,22 @@ export default function Shipping() {
         setValue('fullName', shippingAddress.fullName);
         setValue('address', shippingAddress.address);
         setValue('city', shippingAddress.city);
+        setValue('contactNumber', shippingAddress.contactNumber);
         setValue('postalCode', shippingAddress.postalCode);
         setValue('country', shippingAddress.country);
     }, []);
 
     const classes = useStyles();
-    const submitHandler = ({ fullName, address, city, postalCode, country }) => {
+    const submitHandler = ({ fullName, address, city, postalCode, contactNumber, country }) => {
         dispatch({
             type: 'SAVE_SHIPPING_ADDRESS',
-            payload: { fullName, address, city, postalCode, country },
+            payload: { fullName, address, city, postalCode, contactNumber, country },
         });
         Cookies.set('shippingAddress', {
             fullName,
             address,
             city,
+            contactNumber,
             postalCode,
             country,
         });
@@ -137,6 +139,34 @@ export default function Shipping() {
                                             ? errors.city.type === 'minLength'
                                                 ? 'City length is more than 1'
                                                 : 'City is required'
+                                            : ''
+                                    }
+                                    {...field}
+                                ></TextField>
+                            )}
+                        ></Controller>
+                    </ListItem>
+                    <ListItem>
+                        <Controller
+                            name="contactNumber"
+                            control={control}
+                            defaultValue=""
+                            rules={{
+                                required: true,
+                                minLength: 11,
+                            }}
+                            render={({ field }) => (
+                                <TextField
+                                    variant="outlined"
+                                    fullWidth
+                                    id="contactNumber"
+                                    label="Contect Number"
+                                    error={Boolean(errors.contactNumber)}
+                                    helperText={
+                                        errors.contactNumber
+                                            ? errors.contactNumber.type === 'minLength'
+                                                ? 'Contact Number length is more than 11'
+                                                : 'Contact Number is required'
                                             : ''
                                     }
                                     {...field}
