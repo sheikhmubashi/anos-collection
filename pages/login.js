@@ -11,11 +11,12 @@ import Layout from '../components/Layout';
 import useStyles from '../utils/styles';
 import axios from 'axios';
 import { useRouter } from 'next/router';
-import { useContext, useEffect } from 'react'; 
+import { useContext, useEffect } from 'react';
 import { Store } from '../utils/Store';
 import Cookies from 'js-cookie';
 import { Controller, useForm } from 'react-hook-form';
 import { useSnackbar } from 'notistack';
+import { getError } from '../utils/error';
 
 
 export default function Login() {
@@ -48,10 +49,7 @@ export default function Login() {
             Cookies.set('userInfo', data);
             router.push(redirect || '/');
         } catch (err) {
-            enqueueSnackbar(
-                err.response.data ? err.response.data.message : err.message,
-                { variant: 'error' }
-            );
+            enqueueSnackbar(getError(err), { variant: 'error' });
         }
     };
     return (
