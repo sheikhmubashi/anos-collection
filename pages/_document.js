@@ -20,7 +20,7 @@ export default class MyDcument extends Document {
     );
   }
 }
-MyDcument.getInitialProps = async (ctx) => { 
+MyDcument.getInitialProps = async (ctx) => {
   const sheets = new ServerStyleSheets();
   const originalRenderPage = ctx.renderPage;
   ctx.renderPage = () => {
