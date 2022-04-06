@@ -59,7 +59,7 @@ export default function Home(props) {
                     color="primary"
                     onClick={() => addToCartHandler(product)}
                   >
-                    Add to cart 
+                    Add to cart
                   </Button>
                 </CardActions>
               </Card>
