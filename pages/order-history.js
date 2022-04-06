@@ -134,7 +134,7 @@ function OrderHistory() {
                                                         </TableCell>
                                                     </TableRow>
                                                 ))}
-                                            </TableBody> 
+                                            </TableBody>
                                         </Table>
                                     </TableContainer>
                                 )}
