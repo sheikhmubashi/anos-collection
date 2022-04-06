@@ -71,7 +71,7 @@ const CartScreen = () => {
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
-                                    {cartItems.map((item) => (
+                                    {cartItems.map((item) => ( 
                                         <TableRow key={item._id}>
                                             <TableCell>
                                                 <NextLink href={`/product/${item.slug}`} passHref> 

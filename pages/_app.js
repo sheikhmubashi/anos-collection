@@ -5,7 +5,7 @@ import { SnackbarProvider } from 'notistack'
 
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
+  useEffect(() => { 
     const jssStyles = document.querySelector('#jss-server-side');
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles); 
