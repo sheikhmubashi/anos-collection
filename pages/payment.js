@@ -79,7 +79,7 @@ export default function Payment() {
                         </FormControl>
                     </ListItem>
                     <ListItem>
-                        <Button fullWidth type="submit" variant="contained" color="primary"> 
+                        <Button fullWidth type="submit" variant="contained" color="primary">
                             Continue
                         </Button>
                     </ListItem>
