@@ -110,7 +110,7 @@ function Order({ params }) {
             !order._id ||
             successPay ||
             successDeliver ||
-            (order._id && order._id !== orderId)
+            (order._id && order._id !== orderId) 
         ) {
             fetchOrder();
             if (successPay) {
