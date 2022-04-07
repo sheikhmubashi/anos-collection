@@ -94,7 +94,7 @@ function AdminDashboard() {
                     <Card className={classes.section}>
                         <List>
                             <ListItem>
-                                <Typography component="h1" variant="h1">
+                                <Typography component="h1" variant="h1"> 
                                     Orders
                                 </Typography>
                             </ListItem>
