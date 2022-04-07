@@ -10,7 +10,7 @@ import {
   MenuItem,
 } from '@material-ui/core';
 import {
-  createTheme,
+  createMuiTheme,
   ThemeProvider,
   CssBaseline,
   Switch,
@@ -53,7 +53,7 @@ function Layout({ title, description, children }) {
     Cookies.remove('cartItems');
     router.push('/');
   };
-  const theme = createTheme({
+  const theme = createMuiTheme({
     typography: {
       h1: {
         fontSize: '1.6rem',
