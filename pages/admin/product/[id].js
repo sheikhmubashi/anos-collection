@@ -348,7 +348,7 @@ function ProductEdit({ params }) {
                                             <Button
                                                 variant="contained"
                                                 type="submit"
-                                                fullWidth
+                                                fullWidth 
                                                 color="primary"
                                             >
                                                 Update
