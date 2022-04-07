@@ -4,7 +4,7 @@ import db from '../../../../utils/db';
 import onError from '../../../../utils/error';
 import { isAuth } from '../../../../utils/auth';
 
-const handler = nc({
+const handler = nc({ 
   onError,
 });
 handler.use(isAuth);
