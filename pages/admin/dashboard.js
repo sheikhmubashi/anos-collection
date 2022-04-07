@@ -77,7 +77,7 @@ function AdminDashboard() {
                             <NextLink href="/admin/orders" passHref>
                                 <ListItem button component="a">
                                     <ListItemText primary="Orders"></ListItemText>
-                                </ListItem>
+                                </ListItem> 
                             </NextLink>
                             <NextLink href="/admin/products" passHref>
                                 <ListItem button component="a">
