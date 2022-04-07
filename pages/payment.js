@@ -82,7 +82,7 @@ export default function Payment() {
                         <Button fullWidth type="submit" variant="contained" color="primary">
                             Continue
                         </Button>
-                    </ListItem>
+                    </ListItem> 
                     <ListItem>
                         <Button
                             fullWidth
