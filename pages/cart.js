@@ -75,7 +75,7 @@ const CartScreen = () => {
                                         <TableRow key={item._id}>
                                             <TableCell>
                                                 <NextLink href={`/product/${item.slug}`} passHref> 
-                                                    <Link>
+                                                    <Link> 
                                                         <Image
                                                             src={item.image}
                                                             alt={item.name}
