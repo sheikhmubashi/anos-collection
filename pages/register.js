@@ -175,7 +175,7 @@ export default function Register() {
                         : 'Confirm  Password is required'
                       : ''
                   }
-                  {...field}
+                  {...field} 
                 ></TextField>
               )}
             ></Controller>
