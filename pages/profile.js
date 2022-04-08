@@ -218,7 +218,7 @@ function Profile() {
                                                 variant="contained"
                                                 type="submit"
                                                 fullWidth
-                                                color="primary"
+                                                color="primary" 
                                             >
                                                 Update
                                             </Button>
