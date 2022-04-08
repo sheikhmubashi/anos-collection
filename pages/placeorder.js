@@ -219,7 +219,7 @@ function PlaceOrder() {
                                     </Grid>
                                     <Grid item xs={6}>
                                         <Typography align="right">
-                                            <strong>Rs: {totalPrice}</strong>
+                                            <strong>Rs: {totalPrice}</strong> 
                                         </Typography>
                                     </Grid>
                                 </Grid>
