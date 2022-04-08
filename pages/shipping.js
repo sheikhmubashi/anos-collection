@@ -48,7 +48,7 @@ export default function Shipping() {
             fullName,
             address,
             city,
-            contactNumber,
+            contactNumber, 
             postalCode,
             country,
         });
