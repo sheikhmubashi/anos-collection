@@ -78,7 +78,7 @@ const CartScreen = () => {
                                                     <Link> 
                                                         <Image
                                                             src={item.image}
-                                                            alt={item.name}
+                                                            alt={item.name} 
                                                             width={50}
                                                             height={50}
                                                         ></Image>
