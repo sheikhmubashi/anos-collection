@@ -74,7 +74,7 @@ export default function Payment() {
                                     label="Cash"
                                     value="Cash"
                                     control={<Radio />}
-                                ></FormControlLabel>
+                                ></FormControlLabel> 
                             </RadioGroup>
                         </FormControl>
                     </ListItem>
