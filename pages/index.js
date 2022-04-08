@@ -53,7 +53,7 @@ export default function Home(props) {
                   </CardActionArea>
                 </NextLink>
                 <CardActions>
-                  <Typography>Rs:{product.price}</Typography>
+                  <Typography>Rs:{product.price}</Typography> 
                   <Button
                     size="small"
                     color="primary"
