@@ -99,7 +99,7 @@ function AdminDashboard() {
       const { data } = await axios.post(
         `/api/admin/products`,
         {},
-        {
+        { 
           headers: { authorization: `Bearer ${userInfo.token}` },
         }
       );
