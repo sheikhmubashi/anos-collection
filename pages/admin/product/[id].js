@@ -274,7 +274,7 @@ function ProductEdit({ params }) {
                                                         fullWidth
                                                         id="image"
                                                         label="Image"
-                                                        error={Boolean(errors.image)}
+                                                        error={Boolean(errors.image)} 
                                                         helperText={errors.image ? 'Image is required' : ''}
                                                         {...field}
                                                     ></TextField>
