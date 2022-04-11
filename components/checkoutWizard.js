@@ -7,7 +7,7 @@ export default function CheckoutWizard({ activeStep = 0 }) {
   return (
     <Stepper
       className={classes.transparentBackgroud} 
-      activeStep={activeStep}
+      activeStep={activeStep} 
       alternativeLabel
     >
       {['Login', 'Shipping Address', 'Payment Method', 'Place Order'].map(
