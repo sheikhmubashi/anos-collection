@@ -173,6 +173,11 @@ function ProductEdit({ params }) {
                                     <ListItemText primary="Products"></ListItemText>
                                 </ListItem>
                             </NextLink>
+                            <NextLink href="/admin/users" passHref>
+                                <ListItem button component="a">
+                                    <ListItemText primary="Users"></ListItemText>
+                                </ListItem>
+                            </NextLink>
                         </List>
                     </Card>
                 </Grid>
@@ -274,7 +279,7 @@ function ProductEdit({ params }) {
                                                         fullWidth
                                                         id="image"
                                                         label="Image"
-                                                        error={Boolean(errors.image)} 
+                                                        error={Boolean(errors.image)}
                                                         helperText={errors.image ? 'Image is required' : ''}
                                                         {...field}
                                                     ></TextField>

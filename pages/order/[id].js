@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useReducer, useState } from 'react';
+import React, { useContext, useEffect, useReducer } from 'react';
 import dynamic from 'next/dynamic';
 import Layout from '../../components/Layout';
 import { Store } from '../../utils/Store';
@@ -110,7 +110,7 @@ function Order({ params }) {
             !order._id ||
             successPay ||
             successDeliver ||
-            (order._id && order._id !== orderId) 
+            (order._id && order._id !== orderId)
         ) {
             fetchOrder();
             if (successPay) {
@@ -136,7 +136,7 @@ function Order({ params }) {
             loadPaypalScript();
         }
     }, [order, successPay, successDeliver]);
-    const { closeSnackbar, enqueueSnackbar } = useSnackbar();
+    const { enqueueSnackbar } = useSnackbar();
     function createOrder(data, actions) {
         return actions.order
             .create({

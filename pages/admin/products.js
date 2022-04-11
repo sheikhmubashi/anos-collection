@@ -52,7 +52,7 @@ function reducer(state, action) {
   }
 }
 
-function AdminDashboard() {
+function AdminProdcuts() {
   const { state } = useContext(Store);
   const router = useRouter();
   const classes = useStyles();
@@ -99,7 +99,7 @@ function AdminDashboard() {
       const { data } = await axios.post(
         `/api/admin/products`,
         {},
-        {  
+        {
           headers: { authorization: `Bearer ${userInfo.token}` },
         }
       );
@@ -146,6 +146,11 @@ function AdminDashboard() {
               <NextLink href="/admin/products" passHref>
                 <ListItem selected button component="a">
                   <ListItemText primary="Products"></ListItemText>
+                </ListItem>
+              </NextLink>
+              <NextLink href="/admin/users" passHref>
+                <ListItem button component="a">
+                  <ListItemText primary="Users"></ListItemText>
                 </ListItem>
               </NextLink>
             </List>
@@ -237,4 +242,4 @@ function AdminDashboard() {
   );
 }
 
-export default dynamic(() => Promise.resolve(AdminDashboard), { ssr: false });
+export default dynamic(() => Promise.resolve(AdminProdcuts), { ssr: false });
