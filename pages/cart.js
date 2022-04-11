@@ -1,4 +1,4 @@
-import React, { useContext, useReducer } from 'react';
+import React, { useContext } from 'react';
 import Layout from '../components/Layout';
 import dynamic from 'next/dynamic';
 import { Store } from '../utils/Store';

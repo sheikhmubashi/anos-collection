@@ -82,7 +82,6 @@ function Order({ params }) {
         paymentMethod,
         orderItems,
         itemsPrice,
-        taxPrice,
         shippingPrice,
         totalPrice,
         isPaid,
