@@ -344,7 +344,7 @@ function Order({ params }) {
                                         </Grid>
                                     </Grid>
                                 </ListItem>
-                                {/* {!isPaid && (
+                                {!isPaid && (
                                     <ListItem>
                                         {isPending ? (
                                             <CircularProgress />
@@ -358,7 +358,7 @@ function Order({ params }) {
                                             </div>
                                         )}
                                     </ListItem>
-                                )} */}
+                                )}
                                 {userInfo.isAdmin && !order.isDelivered && (
                                     <ListItem>
                                         {loadingDeliver && <CircularProgress />}
