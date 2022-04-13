@@ -162,7 +162,7 @@ export default function ProductScreen(props) {
         {reviews.map((review) => (
           <ListItem key={review._id}>
             <Grid container>
-              <Grid item className={classes.reviewItem}>
+              <Grid item className={classes.reviewItem}> 
                 <Typography>
                   <strong>{review.name}</strong>
                 </Typography>
