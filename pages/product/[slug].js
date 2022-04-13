@@ -158,7 +158,7 @@ export default function ProductScreen(props) {
             Customer Reviews
           </Typography>
         </ListItem>
-        {reviews.length === 0 && <ListItem>No review</ListItem>}
+        {reviews.length === 0 && <ListItem>No review</ListItem>} 
         {reviews.map((review) => (
           <ListItem key={review._id}>
             <Grid container>
