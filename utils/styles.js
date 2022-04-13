@@ -8,7 +8,7 @@ const useStyles = makeStyles({
       marginLeft: 10,
     },
   },
-  brand: {
+  brand: { 
     fontWeight: 'bold',
     fontSize: '1.5rem',
   },
