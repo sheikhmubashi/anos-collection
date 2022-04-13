@@ -99,7 +99,7 @@ function OrderHistory() {
                                 ) : error ? (
                                     <Typography className={classes.error}>{error}</Typography>
                                 ) : (
-                                    <TableContainer>
+                                    <TableContainer> 
                                         <Table>
                                             <TableHead>
                                                 <TableRow>
