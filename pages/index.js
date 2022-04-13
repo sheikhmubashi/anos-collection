@@ -16,6 +16,8 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 import { useContext } from 'react';
 import { Store } from '../utils/Store';
+import Rating from '@material-ui/lab/Rating';
+
 export default function Home(props) {
   const router = useRouter();
   const { state, dispatch } = useContext(Store);
@@ -44,16 +46,17 @@ export default function Home(props) {
                   <CardActionArea>
                     <CardMedia
                       component="img"
-                      image={product.image} 
+                      image={product.image}
                       title={product.name}
                     ></CardMedia>
                     <CardContent>
                       <Typography>{product.name}</Typography>
+                      <Rating value={product.rating} readOnly></Rating>
                     </CardContent>
                   </CardActionArea>
                 </NextLink>
                 <CardActions>
-                  <Typography>Rs:{product.price}</Typography> 
+                  <Typography>Rs:{product.price}</Typography>
                   <Button
                     size="small"
                     color="primary"
@@ -73,11 +76,11 @@ export default function Home(props) {
 
 export async function getServerSideProps() {
   await db.connect();
-  const products = await Product.find({}).lean();
+  const products = await Product.find({}, '-reviews').lean();
   await db.disconnect();
   return {
     props: {
-      products: products.map(db.convertDocToObj), 
-    }, 
+      products: products.map(db.convertDocToObj),
+    },
   };
 }
