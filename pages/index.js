@@ -72,7 +72,7 @@ export default function Home(props) {
       </div>
     </Layout>
   );
-}
+} 
 
 export async function getServerSideProps() {
   await db.connect();
