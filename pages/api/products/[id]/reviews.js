@@ -59,7 +59,7 @@ handler.use(isAuth).post(async (req, res) => {
                 product.reviews.length;
             await product.save();
             await db.disconnect();
-            res.status(201).send({
+            res.status(201).send({ 
                 message: 'Review submitted',
             });
         }
