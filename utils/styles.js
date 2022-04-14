@@ -80,8 +80,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#f8c040',
     padding: 5,
     borderRadius: '0 5px 5px 0',
-    '& span': {
-      color: '#000000',
+    '& span': { 
+      color: '#000000', 
     },
   },
 }));
