@@ -184,7 +184,7 @@ function Layout({ title, description, children }) {
                       onClick={sidebarCloseHandler}
                     >
                       <ListItemText primary={category}></ListItemText>
-                    </ListItem>
+                    </ListItem> 
                   </NextLink>
                 ))}
               </List>
