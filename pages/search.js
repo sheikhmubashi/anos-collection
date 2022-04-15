@@ -98,7 +98,7 @@ export default function Search(props) {
     };
     const ratingHandler = (e) => {
         filterSearch({ rating: e.target.value });
-    }; 
+    };
 
     const { state, dispatch } = useContext(Store);
     const addToCartHandler = async (product) => {
