@@ -9,7 +9,7 @@ import { Store } from '../utils/Store';
 import ProductItem from '../components/ProductItem';
 
 export default function Home(props) {
-  const router = useRouter();
+  const router = useRouter(); 
   const { state, dispatch } = useContext(Store);
   const { products } = props;
 
