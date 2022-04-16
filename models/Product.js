@@ -12,7 +12,7 @@ const reviewSchema = new mongoose.Schema(
     }
 );
 
-const productSchema = new mongoose.Schema(
+const productSchema = new mongoose.Schema( 
     {
         name: { type: String, required: true },
         slug: { type: String, required: true, unique: true },
