@@ -47,7 +47,7 @@ const data = {
       description:
         'Ladies Stylish Cotton Kurti – 20% OFF Branded Trendy Stylish',
     },
-    {
+    { 
       name: 'Women Kurti',
       slug: 'women-kurti',
       category: 'Shirts',
