@@ -31,7 +31,7 @@ const data = {
       rating: 4.5,
       numReviews: 10,
       countInStock: 20,
-      description:
+      description: 
         'Ladies Stylish Cotton Kurti – 20% OFF Branded Trendy Stylish',
     },
     {
