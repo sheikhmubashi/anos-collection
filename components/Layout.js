@@ -276,7 +276,7 @@ function Layout({ title, description, children }) {
                 </NextLink>
               )}
             </div>
-          </Toolbar>
+          </Toolbar> 
         </AppBar>
         <Container className={classes.main}>{children}</Container>
         <footer className={classes.footer}>
