@@ -71,7 +71,7 @@ const data = {
       slug: 'women-stylsih-shirt',
       category: 'Shirts',
       image: '/images/shirt4.jpeg',
-      price: 900,
+      price: 900, 
       brand: 'Anos Collection',
       rating: 3.5,
       numReviews: 8,
