@@ -301,7 +301,7 @@ function ProductEdit({ params }) {
                                             </Button>
                                             {loadingUpload && <CircularProgress />}
                                         </ListItem>
-                                        {/* <ListItem>
+                                        <ListItem>
                                             <FormControlLabel
                                                 label="Is Featured"
                                                 control={
@@ -346,7 +346,7 @@ function ProductEdit({ params }) {
                                                 />
                                             </Button>
                                             {loadingUpload && <CircularProgress />}
-                                        </ListItem> */}
+                                        </ListItem>
                                         <ListItem> 
                                             <Controller
                                                 name="category"
