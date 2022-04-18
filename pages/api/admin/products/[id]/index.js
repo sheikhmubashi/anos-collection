@@ -10,7 +10,7 @@ handler.get(async (req, res) => {
     await db.connect();
     const product = await Product.findById(req.query.id);
     await db.disconnect();
-    res.send(product); 
+    res.send(product);
 });
 handler.put(async (req, res) => {
     await db.connect();
