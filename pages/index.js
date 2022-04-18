@@ -69,7 +69,7 @@ export default function Home(props) {
               addToCartHandler={addToCartHandler}
             />
           </Grid>
-        ))}
+        ))} 
       </Grid>
     </Layout>
   );
