@@ -63,7 +63,7 @@ export default function Home(props) {
       <Typography variant="h2">Featured Products</Typography>
       <Grid container spacing={3}>
         {topRatedProducts.map((product) => (
-          <Grid item md={4} key={product.name}>
+          <Grid item md={4} key={product.name}> 
             <ProductItem
               product={product}
               addToCartHandler={addToCartHandler}
