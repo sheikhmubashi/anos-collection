@@ -59,7 +59,7 @@ export default function Home(props) {
             />
           </Grid>
         ))}
-      </Grid> 
+      </Grid>
       <Typography variant="h2">Featured Products</Typography>
       <Grid container spacing={3}>
         {topRatedProducts.map((product) => (
