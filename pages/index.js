@@ -87,7 +87,7 @@ export async function getServerSideProps() {
     .lean()
     .sort({
       rating: -1,
-    })
+    }) 
     .limit(6);
   await db.disconnect();
   return {
