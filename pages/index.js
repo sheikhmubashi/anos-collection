@@ -84,7 +84,7 @@ export async function getServerSideProps() {
     .lean()
     .limit(3);
   const topRatedProductsDocs = await Product.find({}, '-reviews')
-    .lean() 
+    .lean()
     .sort({
       rating: -1,
     })
