@@ -33,7 +33,7 @@ export default function Home(props) {
     <Layout>
       <Carousel height={"500px"} className={classes.mt1} animation="slide">
         {featuredProducts.map((product) => (
-          <NextLink
+          <NextLink 
             key={product._id}
             href={`/product/${product.slug}`}
             passHref
