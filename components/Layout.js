@@ -145,7 +145,7 @@ function Layout({ title, description, children }) {
                 <MenuIcon className={classes.navbarButton} />
               </IconButton>
               <NextLink href="/" passHref>
-                <Link> 
+                <Link>
                   <Typography className={classes.brand}>Anos Collection</Typography>
                 </Link>
               </NextLink>
