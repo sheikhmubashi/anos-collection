@@ -140,7 +140,7 @@ function Layout({ title, description, children }) {
                 edge="start"
                 aria-label="open drawer"
                 onClick={sidebarOpenHandler}
-                className={classes.menuButton} 
+                className={classes.menuButton}
               >
                 <MenuIcon className={classes.navbarButton} />
               </IconButton>
