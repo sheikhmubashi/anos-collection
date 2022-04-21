@@ -152,7 +152,7 @@ function Layout({ title, description, children }) {
             </Box>
             <Drawer
               anchor="left"
-              open={sidbarVisible}
+              open={sidbarVisible} 
               onClose={sidebarCloseHandler}
             >
               <List>
