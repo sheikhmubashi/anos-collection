@@ -149,7 +149,7 @@ function Layout({ title, description, children }) {
                   <Typography className={classes.brand}>Anos Collection</Typography>
                 </Link>
               </NextLink>
-            </Box> 
+            </Box>
             <Drawer
               anchor="left"
               open={sidbarVisible}
