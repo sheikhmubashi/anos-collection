@@ -156,7 +156,7 @@ function Layout({ title, description, children }) {
               onClose={sidebarCloseHandler}
             >
               <List> 
-                <ListItem>
+                <ListItem> 
                   <Box
                     display="flex"
                     alignItems="center"
