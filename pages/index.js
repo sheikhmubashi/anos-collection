@@ -11,7 +11,6 @@ import { Store } from '../utils/Store';
 import ProductItem from '../components/ProductItem';
 import Carousel from 'react-material-ui-carousel';
 import useStyles from '../utils/styles';
-import banner from './banner.jpg'
 export default function Home(props) {
   const classes = useStyles();
   const router = useRouter();

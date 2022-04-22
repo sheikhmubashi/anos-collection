@@ -13,8 +13,8 @@ import {
     ListItemText,
     TextField,
     CircularProgress,
-    FormControlLabel,
-    Checkbox,
+    // FormControlLabel,
+    // Checkbox,
 } from '@material-ui/core';
 import { getError } from '../../../utils/error';
 import { Store } from '../../../utils/Store';
