@@ -16,7 +16,7 @@ export default function CheckoutWizard({ activeStep = 0 }) {
                         <StepLabel>{step}</StepLabel>
                     </Step>
                 )
-            )}
+            )} 
         </Stepper>
     );
 }
