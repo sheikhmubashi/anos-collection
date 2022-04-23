@@ -162,7 +162,7 @@ function Layout({ title, description, children }) {
                     alignItems="center"
                     justifyContent="space-between"
                   >
-                    <Typography>Shopping by category</Typography>
+                    <Typography><strong>Shopping by category</strong></Typography>
                     <IconButton
                       aria-label="close"
                       onClick={sidebarCloseHandler}
