@@ -64,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('md')]: {
       display: 'flex',
     },
-    width: "60%",
+    width: "70%",
     // backgroundColor: 'red'
   },
   searchForm: {
