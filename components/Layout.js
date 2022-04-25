@@ -147,6 +147,9 @@ function Layout({ title, description, children }) {
               <NextLink href="/" passHref>
                 <Link>
                   <Typography className={classes.brand}>Anos Collection</Typography>
+                   {/* <Typography className={classes.brand}>
+                  <Image src={logo} alt="logo" width={"200"} height={"60"} />
+                </Typography> */}
                 </Link>
               </NextLink>
             </Box>

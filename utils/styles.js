@@ -64,11 +64,14 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('md')]: {
       display: 'flex',
     },
+    width: "60%",
+    // backgroundColor: 'red'
   },
   searchForm: {
     border: '1px solid #ffffff',
     backgroundColor: '#ffffff',
     borderRadius: 5,
+    width: '100%'
   },
   searchInput: {
     paddingLeft: 5,
@@ -76,6 +79,7 @@ const useStyles = makeStyles((theme) => ({
     '& ::placeholder': {
       color: '#606060',
     },
+    width: '96%',
   },
   iconButton: {
     backgroundColor: '#f8c040',
