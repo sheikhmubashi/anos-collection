@@ -188,7 +188,7 @@ function Layout({ title, description, children }) {
                     >
                       <ListItemText primary={category}></ListItemText>
                     </ListItem> 
-                  </NextLink> 
+                  </NextLink>
                 ))}
               </List>
             </Drawer>
