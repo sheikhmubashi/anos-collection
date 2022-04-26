@@ -151,7 +151,7 @@ function Layout({ title, description, children }) {
                   <Image src={logo} alt="logo" width={"200"} height={"60"} />
                 </Typography> */}
                 </Link>
-              </NextLink>
+              </NextLink> 
             </Box>
             <Drawer
               anchor="left"
