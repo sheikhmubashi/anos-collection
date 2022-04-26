@@ -162,7 +162,7 @@ function Layout({ title, description, children }) {
                 <ListItem> 
                   <Box
                     display="flex"
-                    alignItems="center" 
+                    alignItems="center"
                     justifyContent="space-between"
                   >
                     <Typography><strong>Shopping by category</strong></Typography>
