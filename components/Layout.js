@@ -197,7 +197,7 @@ function Layout({ title, description, children }) {
                 <InputBase
                   name="query"
                   className={classes.searchInput}
-                  placeholder="Search products"
+                  placeholder="Search products" 
                   onChange={queryChangeHandler}
                 />
                 <IconButton
