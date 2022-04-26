@@ -175,7 +175,7 @@ function Layout({ title, description, children }) {
                   </Box>
                 </ListItem>
                 <Divider light />
-                {categories.map((category) => (
+                {categories.map((category) => ( 
                   <NextLink
                     key={category}
                     href={`/search?category=${category}`}
