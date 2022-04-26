@@ -152,7 +152,7 @@ function Layout({ title, description, children }) {
                 </Typography> */}
                 </Link>
               </NextLink>
-            </Box> 
+            </Box>
             <Drawer
               anchor="left"
               open={sidbarVisible}
