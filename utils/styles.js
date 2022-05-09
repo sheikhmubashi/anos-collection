@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
   },
   section: {
-    marginTop: 10,
+    marginTop: 100,
     marginBottom: 10,
   },
   form: {
@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-between',
   },
   menuButton: { padding: 0 },
-  // mt1: { marginTop: '2rem' },
+  mt1: { marginTop: '7rem' },
   // search
   searchSection: {
     display: 'none',

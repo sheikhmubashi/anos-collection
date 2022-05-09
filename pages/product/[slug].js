@@ -77,7 +77,7 @@ export default function ProductScreen(props) {
 
   return (
     <Layout title={product.name} description={product.description}>
-      <div className={classes.section}>
+      <div  className={classes.section}>
         <NextLink href="/" passHref>
           <Link>
             <Typography>back to products</Typography>

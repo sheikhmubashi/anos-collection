@@ -124,8 +124,8 @@ function Layout({ title, description, children }) {
     },
   });
   return (
-    <div>
-      <Head>
+    <div >
+      <Head >
         <title>
           {title ? `${title} - Anos Collection` : 'Anos Collection'}
         </title>
@@ -133,7 +133,7 @@ function Layout({ title, description, children }) {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <AppBar position="static" className={classes.navbar}>
+        <AppBar position="fixed" className={classes.navbar}>
           <Toolbar className={classes.toolbar}>
             <Box display="flex" alignItems="center">
               <IconButton
@@ -147,7 +147,7 @@ function Layout({ title, description, children }) {
               <NextLink href="/" passHref>
                 <Link>
                   <Typography className={classes.brand}>Anos Collection</Typography>
-                   {/* <Typography className={classes.brand}>
+                  {/* <Typography className={classes.brand}>
                   <Image src={logo} alt="logo" width={"200"} height={"60"} />
                 </Typography> */}
                 </Link>
@@ -159,7 +159,7 @@ function Layout({ title, description, children }) {
               onClose={sidebarCloseHandler}
             >
               <List>
-                <ListItem> 
+                <ListItem>
                   <Box
                     display="flex"
                     alignItems="center"
@@ -187,7 +187,7 @@ function Layout({ title, description, children }) {
                       onClick={sidebarCloseHandler}
                     >
                       <ListItemText primary={category}></ListItemText>
-                    </ListItem> 
+                    </ListItem>
                   </NextLink>
                 ))}
               </List>
@@ -279,7 +279,36 @@ function Layout({ title, description, children }) {
                 </NextLink>
               )}
             </div>
-          </Toolbar> 
+          </Toolbar>
+          <div style={{'display':'flex', 'justifyContent':'center'}}>
+            <div style={{ 'width': '60%', 'display': 'flex', 'flexDirection': 'row', 'justifyContent': 'space-evenly' }}>
+              <NextLink href='./search?category=Ladies'>
+                <Link >
+                  <Typography>Womens</Typography>
+                </Link>
+              </NextLink>
+              <NextLink href='./login'>
+                <Link >
+                  <Typography>Mans</Typography>
+                </Link>
+              </NextLink>
+              <NextLink href='./login'>
+                <Link >
+                  <Typography>Kids</Typography>
+                </Link>
+              </NextLink>
+              <NextLink href='./login'>
+                <Link >
+                  <Typography>Sale</Typography>
+                </Link>
+              </NextLink>
+              <NextLink href='./login'>
+                <Link >
+                  <Typography>Hot Products</Typography>
+                </Link>
+              </NextLink>
+            </div>
+          </div>
         </AppBar>
         <Container className={classes.main}>{children}</Container>
         <footer className={classes.footer}>
