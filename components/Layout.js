@@ -93,7 +93,7 @@ function Layout({ title, description, children }) {
       router.push(redirect);
     }
   };
-  const logoutClickHandler = () => {
+  const logoutClickHandler = () => { 
     setAnchorEl(null);
     dispatch({ type: 'USER_LOGOUT' });
     Cookies.remove('userInfo');
