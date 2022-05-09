@@ -89,7 +89,7 @@ function Layout({ title, description, children }) {
   };
   const loginMenuCloseHandler = (e, redirect) => {
     setAnchorEl(null);
-    if (redirect) {
+    if (redirect) { 
       router.push(redirect);
     }
   };
