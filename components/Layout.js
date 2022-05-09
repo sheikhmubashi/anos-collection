@@ -108,7 +108,7 @@ function Layout({ title, description, children }) {
         margin: '1rem 0',
       },
       h2: {
-        fontSize: '1.4rem',
+        fontSize: '1.4rem', 
         fontWeight: 400,
         margin: '1rem 0',
       },
