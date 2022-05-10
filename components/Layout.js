@@ -108,7 +108,7 @@ function Layout({ title, description, children }) {
         margin: '1rem 0',
       },
       h2: {
-        fontSize: '1.4rem', 
+        fontSize: '1.4rem',
         fontWeight: 400,
         margin: '1rem 0',
       },
@@ -280,29 +280,29 @@ function Layout({ title, description, children }) {
               )}
             </div>
           </Toolbar>
-          <div style={{'display':'flex', 'justifyContent':'center'}}>
+          <div style={{ 'display': 'flex', 'justifyContent': 'center' }}>
             <div style={{ 'width': '60%', 'display': 'flex', 'flexDirection': 'row', 'justifyContent': 'space-evenly' }}>
-              <NextLink href='./search?category=Ladies'>
+              <NextLink href='/search?category=Ladies'>
                 <Link >
                   <Typography>Womens</Typography>
                 </Link>
               </NextLink>
-              <NextLink href='./login'>
+              <NextLink href='/search?category=Mans'>
                 <Link >
                   <Typography>Mans</Typography>
                 </Link>
               </NextLink>
-              <NextLink href='./login'>
+              <NextLink href='/search?category=Ladies'>
                 <Link >
                   <Typography>Kids</Typography>
                 </Link>
               </NextLink>
-              <NextLink href='./login'>
+              <NextLink href='/search?category=Ladies'>
                 <Link >
                   <Typography>Sale</Typography>
                 </Link>
               </NextLink>
-              <NextLink href='./login'>
+              <NextLink href='/search?category=Ladies'>
                 <Link >
                   <Typography>Hot Products</Typography>
                 </Link>
