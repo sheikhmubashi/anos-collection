@@ -9,8 +9,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   brand: {
-    fontWeight: 'bold',
-    fontSize: '1.5rem',
+    // fontWeight: 'bold',
+    // fontSize: '1.5rem',
   },
   grow: {
     flexGrow: 1,
