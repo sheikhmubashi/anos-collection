@@ -292,17 +292,17 @@ function Layout({ title, description, children }) {
                   <Typography>Mans</Typography>
                 </Link>
               </NextLink>
-              <NextLink href='/search?category=Ladies'>
+              <NextLink href='/search?category=Kids'>
                 <Link >
                   <Typography>Kids</Typography>
                 </Link>
               </NextLink>
-              <NextLink href='/search?category=Ladies'>
+              <NextLink href='/search?category=Sale'>
                 <Link >
                   <Typography>Sale</Typography>
                 </Link>
               </NextLink>
-              <NextLink href='/search?category=Ladies'>
+              <NextLink href='/search?category=Hot Products'>
                 <Link >
                   <Typography>Hot Products</Typography>
                 </Link>
