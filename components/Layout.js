@@ -40,8 +40,8 @@ import { useRouter } from 'next/router';
 import { useSnackbar } from 'notistack';
 import axios from 'axios';
 import { useEffect } from 'react';
-// import Image from 'next/image';
-// import logo from '../hfshoplogo.jpg'
+import Image from 'next/image';
+import logo from '../hfshoplogo.png'
 function Layout({ title, description, children }) {
   const router = useRouter();
   const { state, dispatch } = useContext(Store);
@@ -146,10 +146,10 @@ function Layout({ title, description, children }) {
               </IconButton>
               <NextLink href="/" passHref>
                 <Link>
-                  <Typography className={classes.brand}>Anos Collection</Typography>
-                  {/* <Typography className={classes.brand}>
-                  <Image src={logo} alt="logo" width={"200"} height={"60"} />
-                </Typography> */}
+                  {/* <Typography className={classes.brand}>Anos Collection</Typography> */}
+                  <Typography className={classes.brand}>
+                  <Image src={logo} alt="logo" width={"150"} height={"40"}/>
+                </Typography>
                 </Link>
               </NextLink>
             </Box>
