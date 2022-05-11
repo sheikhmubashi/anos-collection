@@ -148,8 +148,8 @@ function Layout({ title, description, children }) {
                 <Link>
                   {/* <Typography className={classes.brand}>Anos Collection</Typography> */}
                   <Typography className={classes.brand}>
-                  <Image src={logo} alt="logo" width={"150"} height={"40"}/>
-                </Typography>
+                    <Image src={logo} alt="logo" width={"150"} height={"40"} />
+                  </Typography>
                 </Link>
               </NextLink>
             </Box>
@@ -281,7 +281,7 @@ function Layout({ title, description, children }) {
             </div>
           </Toolbar>
           <div style={{ 'display': 'flex', 'justifyContent': 'center' }}>
-            <div style={{ 'width': '60%', 'display': 'flex', 'flexDirection': 'row', 'justifyContent': 'space-evenly' }}>
+            <div style={{ 'backgroundColor': 'black', 'width': '60%', 'display': 'flex', 'flexDirection': 'row', 'justifyContent': 'space-evenly' }}>
               <NextLink href='/search?category=Womens' passHref>
                 <Link >
                   <Typography>Womens</Typography>

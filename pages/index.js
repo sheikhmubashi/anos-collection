@@ -32,20 +32,26 @@ export default function Home(props) {
     <Layout>
       <Carousel height={"500px"} className={classes.mt1} animation="slide">
         {featuredProducts.map((product) => (
-          <NextLink 
-            key={product._id}
-            href={`/product/${product.slug}`}
-            passHref
-          >
-            <Link>
-              <img
-              height={"500"}
-                src={product.featuredImage}
-                alt={product.name}
-                className={classes.featuredImage}
-              ></img>
-            </Link>
-          </NextLink>
+          // <NextLink 
+          //   key={product._id}
+          //   href={`/product/${product.slug}`}
+          //   passHref
+          // >
+          //   <Link>
+          //     <img
+          //     height={"500"}
+          //       src={product.featuredImage}
+          //       alt={product.name}
+          //       className={classes.featuredImage}
+          //     ></img>
+          //   </Link>
+          // </NextLink>
+          <img
+          height={"500"}
+            src={product.featuredImage}
+            alt={product.name}
+            className={classes.featuredImage}
+          ></img>
         ))}
       </Carousel>
       <Typography variant="h2">Popular Products</Typography>

@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   navbar: {
-    height: "30%",
+    height: "15%",
     backgroundColor: 'black',
     '& a': {
       color: '#ffffff',
