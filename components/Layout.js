@@ -302,6 +302,11 @@ function Layout({ title, description, children }) {
                   <Typography>Sale</Typography>
                 </Link>
               </NextLink>
+              <NextLink href='/search?category=Accessories'>
+                <Link >
+                  <Typography>Accessories</Typography>
+                </Link>
+              </NextLink>
               <NextLink href='/search?category=Hot Products'>
                 <Link >
                   <Typography>Hot Products</Typography>
