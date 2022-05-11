@@ -282,7 +282,7 @@ function Layout({ title, description, children }) {
           </Toolbar>
           <div style={{ 'display': 'flex', 'justifyContent': 'center' }}>
             <div style={{ 'width': '60%', 'display': 'flex', 'flexDirection': 'row', 'justifyContent': 'space-evenly' }}>
-              <NextLink href='/search?category=Ladies'>
+              <NextLink href='/search?category=Womens'>
                 <Link >
                   <Typography>Womens</Typography>
                 </Link>
