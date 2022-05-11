@@ -282,32 +282,32 @@ function Layout({ title, description, children }) {
           </Toolbar>
           <div style={{ 'display': 'flex', 'justifyContent': 'center' }}>
             <div style={{ 'width': '60%', 'display': 'flex', 'flexDirection': 'row', 'justifyContent': 'space-evenly' }}>
-              <NextLink href='/search?category=Womens'>
+              <NextLink href='/search?category=Womens' passHref>
                 <Link >
                   <Typography>Womens</Typography>
                 </Link>
               </NextLink>
-              <NextLink href='/search?category=Mans'>
+              <NextLink href='/search?category=Mans' passHref>
                 <Link >
                   <Typography>Mans</Typography>
                 </Link>
               </NextLink>
-              <NextLink href='/search?category=Kids'>
+              <NextLink href='/search?category=Kids' passHref>
                 <Link >
                   <Typography>Kids</Typography>
                 </Link>
               </NextLink>
-              <NextLink href='/search?category=Sale'>
+              <NextLink href='/search?category=Sale' passHref>
                 <Link >
                   <Typography>Sale</Typography>
                 </Link>
               </NextLink>
-              <NextLink href='/search?category=Accessories'>
+              <NextLink href='/search?category=Accessories' passHref>
                 <Link >
                   <Typography>Accessories</Typography>
                 </Link>
               </NextLink>
-              <NextLink href='/search?category=Hot Products'>
+              <NextLink href='/search?category=Hot Products' passHref>
                 <Link >
                   <Typography>Hot Products</Typography>
                 </Link>
