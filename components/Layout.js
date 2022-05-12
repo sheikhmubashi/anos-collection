@@ -133,7 +133,7 @@ function Layout({ title, description, children }) {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <AppBar style={{ "height": "15%" }} position="fixed" className={classes.navbar}>
+        <AppBar position="fixed" className={classes.navbar}>
           <Toolbar className={classes.toolbar}>
             <Box display="flex" alignItems="center">
               <IconButton

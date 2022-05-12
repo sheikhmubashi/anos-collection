@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import NextLink from 'next/link';
-import { Grid, Link, Typography } from '@material-ui/core';
+// import NextLink from 'next/link';
+// import { Link } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import Layout from '../components/Layout';
 import db from '../utils/db';
 import Product from '../models/Product';
@@ -47,7 +48,8 @@ export default function Home(props) {
           //   </Link>
           // </NextLink>
           <img
-          height={"500"}
+            key={product._id}
+            height={"500"}
             src={product.featuredImage}
             alt={product.name}
             className={classes.featuredImage}
@@ -74,7 +76,7 @@ export default function Home(props) {
               addToCartHandler={addToCartHandler}
             />
           </Grid>
-        ))} 
+        ))}
       </Grid>
     </Layout>
   );
