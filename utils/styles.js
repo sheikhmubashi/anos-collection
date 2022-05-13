@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     // fontWeight: 'bold',
     // fontSize: '1.5rem',
     display: 'flex',
-  },
+  }, 
   grow: {
     flexGrow: 1,
   },
