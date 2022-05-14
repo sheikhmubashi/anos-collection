@@ -22,8 +22,7 @@ const useStyles = makeStyles((theme) => ({
     minHeight: '80vh',
   },
   footer: {
-    marginTop: 10,
-    textAlign: 'center',
+    
   },
   section: {
     marginTop: 100,

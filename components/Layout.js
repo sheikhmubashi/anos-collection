@@ -316,8 +316,22 @@ function Layout({ title, description, children }) {
           </div>
         </AppBar>
         <Container className={classes.main}>{children}</Container>
-        <footer className={classes.footer}>
-          <Typography>All rights reserved. Anos Collection.</Typography>
+        <footer style={{ 'backgroundColor': 'black', "backgroundColor": "black", "display": "flex", 'justifyContent':'space-evenly' }} className={classes.footer}>
+          <div style={{ 'color': 'white', 'width':'40%' }}>
+            <h1>About Us</h1>
+            <p>HF Online’s mission is to be world’s most customer centric company, to establish a place where customers can come to find different variety they might want to buy online. hfshop.com.pk caters best quality clothing, accessories, makeup and household items at most affordable price. We aim to provide the best possible online shopping experience to our customers. Shop at hfshop.com.pk and avail the best discounts & offers on your favorite products.</p>
+          </div>
+          <div style={{ 'color': 'white','width':'20%' }}>
+            <h1>FOLLOW US</h1>
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>Instagram</p>
+          </div>
+          <div style={{ 'color': 'white','width':'20%' }}>
+            <h1>Payment Method</h1>
+            <p>Cash on delivery</p>
+            <p>Bank transfer</p>
+          </div>
         </footer>
       </ThemeProvider>
     </div>
