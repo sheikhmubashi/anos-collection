@@ -148,7 +148,7 @@ function Layout({ title, description, children }) {
                 <Link>
                   {/* <Typography className={classes.brand}>Anos Collection</Typography> */}
                   <Typography className={classes.brand}>
-                    <Image src={logo} alt="logo" width={"150"} height={"40"} />
+                    <Image src={logo} alt="logo" width={"100"} height={"40"} />
                   </Typography>
                 </Link>
               </NextLink>
