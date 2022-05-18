@@ -17,7 +17,7 @@ import {
   ListItemText,
   InputBase,
 } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
+// import MenuIcon from '@material-ui/icons/Menu';
 import CancelIcon from '@material-ui/icons/Cancel';
 import SearchIcon from '@material-ui/icons/Search';
 import {
@@ -48,9 +48,9 @@ function Layout({ title, description, children }) {
   const { darkMode, cart, userInfo } = state;
   const classes = useStyles();
   const [sidbarVisible, setSidebarVisible] = useState(false);
-  const sidebarOpenHandler = () => {
-    setSidebarVisible(true);
-  };
+  // const sidebarOpenHandler = () => {
+  //   setSidebarVisible(true);
+  // };
   const sidebarCloseHandler = () => {
     setSidebarVisible(false);
   };
