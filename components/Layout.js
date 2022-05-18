@@ -136,14 +136,14 @@ function Layout({ title, description, children }) {
         <AppBar position="fixed" className={classes.navbar}>
           <Toolbar className={classes.toolbar}>
             <Box display="flex" alignItems="center">
-              <IconButton
+              {/* <IconButton
                 edge="start"
                 aria-label="open drawer"
                 onClick={sidebarOpenHandler}
                 className={classes.menuButton}
               >
                 <MenuIcon className={classes.navbarButton} />
-              </IconButton>
+              </IconButton> */}
               <NextLink href="/" passHref>
                 <Link>
                   {/* <Typography className={classes.brand}>Anos Collection</Typography> */}
