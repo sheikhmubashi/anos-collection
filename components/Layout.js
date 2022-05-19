@@ -191,7 +191,7 @@ function Layout({ title, description, children }) {
                   </NextLink>
                 ))}
               </List>
-            </Drawer>
+            </Drawer> 
             <div className={classes.searchSection}>
               <form onSubmit={submitHandler} className={classes.searchForm}>
                 <InputBase
