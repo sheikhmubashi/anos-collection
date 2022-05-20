@@ -191,7 +191,7 @@ function Layout({ title, description, children }) {
                   </NextLink>
                 ))}
               </List>
-            </Drawer> 
+            </Drawer>
             <div className={classes.searchSection}>
               <form onSubmit={submitHandler} className={classes.searchForm}>
                 <InputBase
@@ -299,42 +299,46 @@ function Layout({ title, description, children }) {
               </NextLink>
               <NextLink href='/search?category=Sale' passHref>
                 <Link >
-                  <Typography>Sale</Typography>
-                </Link>
-              </NextLink>
-              <NextLink href='/search?category=Accessories' passHref>
-                <Link >
-                  <Typography>Accessories</Typography>
-                </Link>
-              </NextLink>
-              <NextLink href='/search?category=Hot Products' passHref>
-                <Link >
-                  <Typography>Hot Products</Typography>
-                </Link>
-              </NextLink>
-            </div>
+                  <Typography style={{"color":'red'}}>Sale</Typography>
+              </Link>
+            </NextLink>
+            <NextLink href='/search?category=Accessories' passHref>
+              <Link >
+                <Typography>Accessories</Typography>
+              </Link>
+            </NextLink>
+            <NextLink href='/search?category=Hot Products' passHref>
+              <Link >
+                <Typography style={{"color":'green'}}>Hot Products</Typography>
+              </Link>
+            </NextLink>
           </div>
-        </AppBar>
-        <Container className={classes.main}>{children}</Container>
-        <footer style={{ "backgroundColor": "black", "display": "flex", 'justifyContent':'space-evenly' }} className={classes.footer}>
-          <div style={{ 'color': 'white', 'width':'40%' }}>
-            <h1>About Us</h1>
-            <p>HF Online’s mission is to be world’s most customer centric company, to establish a place where customers can come to find different variety they might want to buy online. hfshop.com.pk caters best quality clothing, accessories, makeup and household items at most affordable price. We aim to provide the best possible online shopping experience to our customers. Shop at hfshop.com.pk and avail the best discounts & offers on your favorite products.</p>
-          </div>
-          <div style={{ 'color': 'white','width':'20%' }}>
-            <h1>FOLLOW US</h1>
-            <p>Facebook</p>
-            <p>Twitter</p>
-            <p>Instagram</p>
-          </div>
-          <div style={{ 'color': 'white','width':'20%' }}>
-            <h1>Payment Method</h1>
-            <p>Cash on delivery</p>
-            <p>Bank transfer</p>
-          </div>
-        </footer>
-      </ThemeProvider>
-    </div>
+        </div>
+      </AppBar>
+      <Container className={classes.main}>{children}</Container>
+      <footer style={{ "backgroundColor": "black", "display": "flex", 'justifyContent': 'space-evenly' }} className={classes.footer}>
+        <div style={{ 'color': 'white', 'width': '40%'}}>
+          <h1>About Us</h1>
+          <p>ANOS mission is to be world’s most customer centric company, to establish a place where customers can come to find different variety they might want to buy online. hfshop.com.pk caters best quality clothing, accessories, makeup and household items at most affordable price. We aim to provide the best possible online shopping experience to our customers. Shop at hfshop.com.pk and avail the best discounts & offers on your favorite products.</p>
+        </div>
+        <div style={{ 'color': 'white', 'width': '20%' }}>
+          <h1>FOLLOW US</h1>
+          <p>Facebook</p>
+          <p>Twitter</p>
+          <p>Instagram</p>
+        </div>
+        <div style={{ 'color': 'white', 'width': '20%' }}>
+          <h1>Payment Method</h1>
+          <p>Cash on delivery</p>
+          <p>Bank transfer</p>
+        </div>
+      </footer>
+      <div style={{'color':'white', 'backgroundColor':'black', 'textAlign':'center', 'marginTop':'-20px'}}>
+        <h4 >©ANOS COLLECTION. All Rights Reserved</h4>
+      </div>
+     
+    </ThemeProvider>
+    </div >
   );
 }
 

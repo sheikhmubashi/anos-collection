@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-// import NextLink from 'next/link';
-// import { Link } from '@material-ui/core';
-import { Grid, Typography, Image } from '@material-ui/core';
+import NextLink from 'next/link';
+import { Link } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
+import Image from 'next/image'
 import Layout from '../components/Layout';
 import db from '../utils/db';
 import Product from '../models/Product';
@@ -9,12 +10,14 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 import { useContext } from 'react';
 import { Store } from '../utils/Store';
-import ProductItem from '../components/ProductItem';
+// import ProductItem from '../components/ProductItem';
 import Carousel from 'react-material-ui-carousel';
 import useStyles from '../utils/styles';
-import bannerOne from '../public/images/banner1.jpg';
-import bannerTwo from '../public/images/banner2.jpg';
-import bannerThree from '../public/images/banner3.jpg';
+import bannerWomens from '../public/images/bannerWomens.jpg';
+import bannerMans from '../public/images/bannerMans.jpg';
+import bannerKids from '../public/images/bannerKids.jpg';
+import bannerGirls from '../public/images/bannerGirls.jpg';
+
 
 export default function Home(props) {
   const classes = useStyles();
@@ -22,17 +25,17 @@ export default function Home(props) {
   const { state, dispatch } = useContext(Store);
   const { topRatedProducts, featuredProducts } = props;
 
-  const addToCartHandler = async (product) => {
-    const existItem = state.cart.cartItems.find((x) => x._id === product._id);
-    const quantity = existItem ? existItem.quantity + 1 : 1;
-    const { data } = await axios.get(`/api/products/${product._id}`);
-    if (data.countInStock < quantity) {
-      window.alert('Sorry. Product is out of stock');
-      return;
-    }
-    dispatch({ type: 'CART_ADD_ITEM', payload: { ...product, quantity } });
-    router.push('/cart');
-  };
+  // const addToCartHandler = async (product) => {
+  //   const existItem = state.cart.cartItems.find((x) => x._id === product._id);
+  //   const quantity = existItem ? existItem.quantity + 1 : 1;
+  //   const { data } = await axios.get(`/api/products/${product._id}`);
+  //   if (data.countInStock < quantity) {
+  //     window.alert('Sorry. Product is out of stock');
+  //     return;
+  //   }
+  //   dispatch({ type: 'CART_ADD_ITEM', payload: { ...product, quantity } });
+  //   router.push('/cart');
+  // };
   return (
     <Layout>
       <Carousel height={"500px"} className={classes.mt1} animation="slide">
@@ -55,13 +58,24 @@ export default function Home(props) {
             key={product._id}
             height={"500"}
             src={product.featuredImage}
+            // src={bannerWomens}
             alt={product.name}
             className={classes.featuredImage}
           ></img>
-          ))}
+        ))}
       </Carousel>
-      <Typography variant="h1">Popular Products</Typography>
-      <Grid container spacing={3}>
+      <Typography variant="h1">WOMENS</Typography>
+      <div>
+        <NextLink href="/search?category=Womens" passHref>
+          <Link>
+            {/* <Typography className={classes.brand}>Anos Collection</Typography> */}
+            <Typography className={classes.brand}>
+              <Image src={bannerWomens} alt="banner" />
+            </Typography>
+          </Link>
+        </NextLink>
+      </div>
+      {/* <Grid container spacing={3}>
         {topRatedProducts.map((product) => (
           <Grid item md={4} key={product.name}>
             <ProductItem
@@ -70,18 +84,41 @@ export default function Home(props) {
             />
           </Grid>
         ))}
-      </Grid>
-      <Typography variant="h1">Featured Products</Typography>
-      <Grid container spacing={3}>
-        {topRatedProducts.map((product) => (
-          <Grid item md={4} key={product.name}>
-            <ProductItem
-              product={product}
-              addToCartHandler={addToCartHandler}
-            />
-          </Grid>
-        ))}
-      </Grid>
+      </Grid> */}
+      <Typography variant="h1">MANS</Typography>
+      <div>
+        <NextLink href="/search?category=Mans" passHref>
+          <Link>
+            {/* <Typography className={classes.brand}>Anos Collection</Typography> */}
+            <Typography className={classes.brand}>
+              <Image src={bannerMans} alt="banner" />
+            </Typography>
+          </Link>
+        </NextLink>
+      </div>
+      <Typography variant="h1">KIDS</Typography>
+      <div>
+        <NextLink href="/search?category=Kids" passHref>
+          <Link>
+            {/* <Typography className={classes.brand}>Anos Collection</Typography> */}
+            <Typography className={classes.brand}>
+              <Image src={bannerKids} alt="banner" />
+            </Typography>
+          </Link>
+        </NextLink>
+      </div>
+      <Typography  variant="h1">SALE</Typography>
+      <div>
+        <NextLink href="/search?category=Sale" passHref>
+          <Link>
+            {/* <Typography className={classes.brand}>Anos Collection</Typography> */}
+            <Typography className={classes.brand}>
+              <Image src={bannerGirls} alt="banner" />
+            </Typography>
+          </Link>
+        </NextLink>
+      </div>
+
     </Layout>
   );
 }

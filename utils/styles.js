@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/core';
-
 const useStyles = makeStyles((theme) => ({
   navbar: {
     height: "16%",
@@ -7,14 +6,14 @@ const useStyles = makeStyles((theme) => ({
     '& a': {
       color: '#ffffff',
       marginLeft: 10,
-      
+
     },
   },
   brand: {
     // fontWeight: 'bold',
     // fontSize: '1.5rem',
     display: 'flex',
-  }, 
+  },
   grow: {
     flexGrow: 1,
   },
@@ -22,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     minHeight: '80vh',
   },
   footer: {
-    
+
   },
   section: {
     marginTop: 100,
@@ -94,5 +93,10 @@ const useStyles = makeStyles((theme) => ({
   sort: {
     marginRight: 5,
   },
+
+  // Sale button Styel 
+  saleCss: {
+    color: 'red',
+  }
 }));
 export default useStyles;
