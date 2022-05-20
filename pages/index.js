@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 // import NextLink from 'next/link';
 // import { Link } from '@material-ui/core';
-import { Grid, Typography } from '@material-ui/core';
+import { Grid, Typography, Image } from '@material-ui/core';
 import Layout from '../components/Layout';
 import db from '../utils/db';
 import Product from '../models/Product';
@@ -12,6 +12,10 @@ import { Store } from '../utils/Store';
 import ProductItem from '../components/ProductItem';
 import Carousel from 'react-material-ui-carousel';
 import useStyles from '../utils/styles';
+import bannerOne from '../public/images/banner1.jpg';
+import bannerTwo from '../public/images/banner2.jpg';
+import bannerThree from '../public/images/banner3.jpg';
+
 export default function Home(props) {
   const classes = useStyles();
   const router = useRouter();
@@ -54,9 +58,9 @@ export default function Home(props) {
             alt={product.name}
             className={classes.featuredImage}
           ></img>
-        ))}
+          ))}
       </Carousel>
-      <Typography variant="h2">Popular Products</Typography>
+      <Typography variant="h1">Popular Products</Typography>
       <Grid container spacing={3}>
         {topRatedProducts.map((product) => (
           <Grid item md={4} key={product.name}>
@@ -67,7 +71,7 @@ export default function Home(props) {
           </Grid>
         ))}
       </Grid>
-      <Typography variant="h2">Featured Products</Typography>
+      <Typography variant="h1">Featured Products</Typography>
       <Grid container spacing={3}>
         {topRatedProducts.map((product) => (
           <Grid item md={4} key={product.name}>
