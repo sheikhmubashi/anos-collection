@@ -21,7 +21,7 @@ import {
 import CancelIcon from '@material-ui/icons/Cancel';
 import SearchIcon from '@material-ui/icons/Search';
 import {
-  createMuiTheme,
+  createTheme,
   ThemeProvider,
   CssBaseline,
   Switch,
@@ -100,7 +100,7 @@ function Layout({ title, description, children }) {
     Cookies.remove('cartItems');
     router.push('/');
   };
-  const theme = createMuiTheme({
+  const theme = createTheme({
     typography: {
       h1: {
         fontSize: '1.6rem',
