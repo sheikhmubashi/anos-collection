@@ -71,7 +71,7 @@ export default function Home(props) {
       </Carousel>
       <Typography variant="h1">WOMEN</Typography>
       <div>
-        <NextLink href="/search?category=Womens" passHref>
+        <NextLink href="/search?category=Women" passHref>
           <Link>
             {/* <Typography className={classes.brand}>Anos Collection</Typography> */}
             <Typography className={classes.brand}>
@@ -92,7 +92,7 @@ export default function Home(props) {
       </Grid> */}
       <Typography variant="h1">MEN</Typography>
       <div>
-        <NextLink href="/search?category=Mans" passHref>
+        <NextLink href="/search?category=Men" passHref>
           <Link>
             {/* <Typography className={classes.brand}>Anos Collection</Typography> */}
             <Typography className={classes.brand}>
