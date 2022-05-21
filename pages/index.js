@@ -18,6 +18,8 @@ import bannerWomens from '../public/images/bannerWomens.jpg';
 import bannerMans from '../public/images/bannerMans.jpg';
 import bannerKids from '../public/images/bannerKids.jpg';
 import bannerGirls from '../public/images/bannerGirls.jpg';
+import mainBanner from '../public/images/mainBanner.jpg';
+
 
 
 export default function Home(props) {
@@ -57,14 +59,14 @@ export default function Home(props) {
           //     ></img>
           //   </Link>
           // </NextLink>
-          <img
+          <Image
             key={product._id}
-            height={"500"}
-            src={product.featuredImage}
+            // height={"500"}
+            src={mainBanner}
             // src={bannerWomens}
             alt={product.name}
             className={classes.featuredImage}
-          ></img>
+          ></Image>
         ))}
       </Carousel>
       <Typography variant="h1">WOMENS</Typography>
