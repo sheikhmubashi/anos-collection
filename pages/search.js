@@ -114,7 +114,7 @@ export default function Search(props) {
     };
     return (
         <Layout title="Search">
-            <Grid className={classes.mt1} container spacing={1}>
+            <Grid  style={{"marginTop": "100px"}} className={classes.mt1} container spacing={1}>
                 <Grid item md={3}>
                     <List>
                         <ListItem>
