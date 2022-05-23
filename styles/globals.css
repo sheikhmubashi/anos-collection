@@ -18,7 +18,7 @@ a {
 * {
   box-sizing: border-box;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 700px) {
   .layOutFooter {
     flex-direction: column;
     align-items: center;
