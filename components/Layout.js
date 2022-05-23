@@ -284,32 +284,32 @@ function Layout({ title, description, children }) {
             <div style={{ 'backgroundColor': 'black', 'width': '60%', 'display': 'flex', 'flexDirection': 'row', 'justifyContent': 'space-evenly' }}>
               <NextLink href='/search?category=Women' passHref>
                 <Link >
-                  <Typography>Women</Typography>
+                  <Typography style={{"fontWeight":'bolder',}}>Women</Typography>
                 </Link>
               </NextLink>
               <NextLink href='/search?category=Men' passHref>
                 <Link >
-                  <Typography>Men</Typography>
+                  <Typography style={{"fontWeight":'bolder',}}>Men</Typography>
                 </Link>
               </NextLink>
               <NextLink href='/search?category=Kids' passHref>
                 <Link >
-                  <Typography>Kids</Typography>
+                  <Typography style={{"fontWeight":'bolder',}}>Kids</Typography>
                 </Link>
               </NextLink>
               <NextLink href='/search?category=Accessories' passHref>
                 <Link >
-                  <Typography>Accessories</Typography>
+                  <Typography style={{"fontWeight":'bolder',}}>Accessories</Typography>
                 </Link>
               </NextLink>
               <NextLink href='/search?category=Sale' passHref>
                 <Link >
-                  <Typography style={{ "color": 'red' }}>Sale</Typography>
+                  <Typography style={{ "color": 'red', "fontWeight":'bolder' }}>Sale</Typography>
                 </Link>
               </NextLink>
               <NextLink href='/search?category=Hot Products' passHref>
                 <Link >
-                  <Typography style={{ "color": 'green' }}>Hot Products</Typography>
+                  <Typography style={{ "color": 'green', "fontWeight":'bolder' }}>Hot Products</Typography>
                 </Link>
               </NextLink>
             </div>

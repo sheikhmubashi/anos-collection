@@ -69,7 +69,7 @@ export default function Home(props) {
           ></Image>
         ))}
       </Carousel>
-      <Typography variant="h1">WOMEN</Typography>
+      <Typography style={{"fontWeight":'bolder',}} variant="h1">WOMEN</Typography>
       <div>
         <NextLink href="/search?category=Women" passHref>
           <Link>
@@ -90,7 +90,7 @@ export default function Home(props) {
           </Grid>
         ))}
       </Grid> */}
-      <Typography variant="h1">MEN</Typography>
+      <Typography style={{"fontWeight":'bolder',}} variant="h1">MEN</Typography>
       <div>
         <NextLink href="/search?category=Men" passHref>
           <Link>
@@ -101,7 +101,7 @@ export default function Home(props) {
           </Link>
         </NextLink>
       </div>
-      <Typography variant="h1">KIDS</Typography>
+      <Typography style={{"fontWeight":'bolder',}} variant="h1">KIDS</Typography>
       <div>
         <NextLink href="/search?category=Kids" passHref>
           <Link>
@@ -112,7 +112,7 @@ export default function Home(props) {
           </Link>
         </NextLink>
       </div>
-      <Typography variant="h1">SALE</Typography>
+      <Typography style={{"fontWeight":'bolder',}} variant="h1">SALE</Typography>
       <div>
         <NextLink href="/search?category=Sale" passHref>
           <Link>
