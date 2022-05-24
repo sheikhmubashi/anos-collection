@@ -18,9 +18,25 @@ a {
 * {
   box-sizing: border-box;
 }
+.childCatogaryDiv {
+  background-color: black;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+.headerCategoriesText {
+  font-weight: bolder !important;
+}
 @media screen and (max-width: 672px) {
   .childCatogaryDiv {
     width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .headerCategoriesText {
+    font-size: x-small !important;
   }
 }
 @media screen and (max-width: 700px) {

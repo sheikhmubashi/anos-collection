@@ -103,16 +103,5 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
   },
-  childCatogaryDiv: {
-    backgroundColor: 'black',
-    width: '60%',
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    marginBottom: "10px"
-  },
-  headerCategoriesText: {
-    fontWeight: 'bolder'
-  }
 }));
 export default useStyles;

@@ -281,35 +281,35 @@ function Layout({ title, description, children }) {
             </div>
           </Toolbar>
           <div className={classes.parentCatogaryDiv}>
-            <div className={classes.childCatogaryDiv}>
+            <div className='childCatogaryDiv'>
               <NextLink href='/search?category=Women' passHref>
                 <Link >
-                  <Typography className={classes.headerCategoriesText}>Women</Typography>
+                  <Typography className='headerCategoriesText'>Women</Typography>
                 </Link>
               </NextLink>
               <NextLink href='/search?category=Men' passHref>
                 <Link >
-                  <Typography className={classes.headerCategoriesText}>Men</Typography>
+                  <Typography className='headerCategoriesText'>Men</Typography>
                 </Link>
               </NextLink>
               <NextLink href='/search?category=Kids' passHref>
                 <Link >
-                  <Typography className={classes.headerCategoriesText}>Kids</Typography>
+                  <Typography className='headerCategoriesText'>Kids</Typography>
                 </Link>
               </NextLink>
               <NextLink href='/search?category=Accessories' passHref>
                 <Link >
-                  <Typography className={classes.headerCategoriesText}>Accessories</Typography>
+                  <Typography className='headerCategoriesText'>Accessories</Typography>
                 </Link>
               </NextLink>
               <NextLink href='/search?category=Sale' passHref>
                 <Link >
-                  <Typography className={classes.headerCategoriesText}>Sale</Typography>
+                  <Typography className='headerCategoriesText'>Sale</Typography>
                 </Link>
               </NextLink>
               <NextLink href='/search?category=Hot Products' passHref>
                 <Link >
-                  <Typography className={classes.headerCategoriesText}>Hot Products</Typography>
+                  <Typography className='headerCategoriesText'>Hot Products</Typography>
                 </Link>
               </NextLink>
             </div>
