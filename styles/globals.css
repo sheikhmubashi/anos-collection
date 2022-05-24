@@ -18,6 +18,11 @@ a {
 * {
   box-sizing: border-box;
 }
+@media screen and (max-width: 672px) {
+  .childCatogaryDiv {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 700px) {
   .layOutFooter {
     flex-direction: column;
@@ -25,11 +30,6 @@ a {
     text-align: center;
   }
   .layOutFooter > div {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 672px) {
-  .childCatogaryDiv {
     width: 100%;
   }
 }
