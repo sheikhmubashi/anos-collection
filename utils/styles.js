@@ -110,6 +110,9 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     marginBottom: "10px"
+  },
+  headerCategoriesText: {
+    fontWeight: 'bolder'
   }
 }));
 export default useStyles;

@@ -284,32 +284,32 @@ function Layout({ title, description, children }) {
             <div className={classes.childCatogaryDiv}>
               <NextLink href='/search?category=Women' passHref>
                 <Link >
-                  <Typography style={{"fontWeight":'bolder',}}>Women</Typography>
+                  <Typography className={classes.headerCategoriesText}>Women</Typography>
                 </Link>
               </NextLink>
               <NextLink href='/search?category=Men' passHref>
                 <Link >
-                  <Typography style={{"fontWeight":'bolder',}}>Men</Typography>
+                  <Typography className={classes.headerCategoriesText}>Men</Typography>
                 </Link>
               </NextLink>
               <NextLink href='/search?category=Kids' passHref>
                 <Link >
-                  <Typography style={{"fontWeight":'bolder',}}>Kids</Typography>
+                  <Typography className={classes.headerCategoriesText}>Kids</Typography>
                 </Link>
               </NextLink>
               <NextLink href='/search?category=Accessories' passHref>
                 <Link >
-                  <Typography style={{"fontWeight":'bolder',}}>Accessories</Typography>
+                  <Typography className={classes.headerCategoriesText}>Accessories</Typography>
                 </Link>
               </NextLink>
               <NextLink href='/search?category=Sale' passHref>
                 <Link >
-                  <Typography style={{ "color": 'red', "fontWeight":'bolder' }}>Sale</Typography>
+                  <Typography className={classes.headerCategoriesText}>Sale</Typography>
                 </Link>
               </NextLink>
               <NextLink href='/search?category=Hot Products' passHref>
                 <Link >
-                  <Typography style={{ "color": 'green', "fontWeight":'bolder' }}>Hot Products</Typography>
+                  <Typography className={classes.headerCategoriesText}>Hot Products</Typography>
                 </Link>
               </NextLink>
             </div>
@@ -321,7 +321,7 @@ function Layout({ title, description, children }) {
             <h1>About Us</h1>
             <p>ANOS mission is to be world’s most customer centric company, to establish a place where customers can come to find different variety they might want to buy online. hfshop.com.pk caters best quality clothing, accessories, makeup and household items at most affordable price. We aim to provide the best possible online shopping experience to our customers. Shop at hfshop.com.pk and avail the best discounts & offers on your favorite products.</p>
           </div>
-          <div  style={{ 'color': 'white' }}>
+          <div style={{ 'color': 'white' }}>
             <h1>FOLLOW US</h1>
             <p>Facebook</p>
             <p>Twitter</p>
