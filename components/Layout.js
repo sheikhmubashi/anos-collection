@@ -280,8 +280,8 @@ function Layout({ title, description, children }) {
               )}
             </div>
           </Toolbar>
-          <div style={{ 'display': 'flex', 'justifyContent': 'center' }}>
-            <div style={{ 'backgroundColor': 'black', 'width': '60%', 'display': 'flex', 'flexDirection': 'row', 'justifyContent': 'space-evenly' }}>
+          <div className={classes.parentCatogaryDiv}>
+            <div className={classes.childCatogaryDiv}>
               <NextLink href='/search?category=Women' passHref>
                 <Link >
                   <Typography style={{"fontWeight":'bolder',}}>Women</Typography>

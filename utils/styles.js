@@ -97,6 +97,18 @@ const useStyles = makeStyles((theme) => ({
   // Sale button Styel 
   saleCss: {
     color: 'red',
+  },
+  // main header 
+  parentCatogaryDiv: {
+    display: 'flex',
+    justifyContent: 'center',
+  },
+  childCatogaryDiv: {
+    backgroundColor: 'black',
+    width: '60%',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly'
   }
 }));
 export default useStyles;
