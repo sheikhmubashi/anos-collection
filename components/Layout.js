@@ -304,12 +304,12 @@ function Layout({ title, description, children }) {
               </NextLink>
               <NextLink href='/search?category=Sale' passHref>
                 <Link >
-                  <Typography className='headerCategoriesText'>Sale</Typography>
+                  <Typography style={{'color':'red'}} className='headerCategoriesText'>Sale</Typography>
                 </Link>
               </NextLink>
               <NextLink href='/search?category=Hot Products' passHref>
                 <Link >
-                  <Typography className='headerCategoriesText'>Hot Products</Typography>
+                  <Typography style={{'color':'green'}} className='headerCategoriesText'>Hot Products</Typography>
                 </Link>
               </NextLink>
             </div>
