@@ -313,7 +313,7 @@ function Layout({ title, description, children }) {
                 </Link>
               </NextLink>
             </div>
-          </div>
+          </div> 
         </AppBar>
         <Container className={classes.main}>{children}</Container>
         <footer className="layOutFooter" style={{ "backgroundColor": "black", "display": "flex", 'justifyContent': 'space-evenly' }}>
