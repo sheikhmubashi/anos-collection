@@ -59,7 +59,7 @@ export default function Register() {
   };
   return (
     <Layout title="Register">
-      <form onSubmit={handleSubmit(submitHandler)} className={classes.form}>
+      <form style={{'marginTop':'100px'}} onSubmit={handleSubmit(submitHandler)} className={classes.form}>
         <Typography component="h1" variant="h1">
           Register
         </Typography>
