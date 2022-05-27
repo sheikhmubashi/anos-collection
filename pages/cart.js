@@ -45,8 +45,8 @@ const CartScreen = () => {
         router.push('/shipping')
     }
     return (
-        <Layout title="Shopping Cart">
-            <Typography component="h1" variant="h1">
+        <Layout  title="Shopping Cart" >
+            <Typography style={{'marginTop':'100px'}} component="h1" variant="h1">
                 Shopping Cart
             </Typography>
             {cartItems.length === 0 ? (
