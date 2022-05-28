@@ -61,7 +61,7 @@ export default function Register() {
     <Layout title="Register">
       <form style={{'marginTop':'100px'}} onSubmit={handleSubmit(submitHandler)} className={classes.form}>
         <Typography component="h1" variant="h1">
-          Register
+          Register 
         </Typography>
         <List>
           <ListItem>
