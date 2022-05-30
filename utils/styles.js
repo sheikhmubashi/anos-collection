@@ -23,6 +23,12 @@ const useStyles = makeStyles((theme) => ({
   footer: {
 
   },
+  layOutFooter: {
+    backgroundColor: "black",
+    display: "flex",
+    justifyContent: 'space-evenly',
+    marginTop: "50px",
+  },
   section: {
     marginTop: 100,
     marginBottom: 10,
