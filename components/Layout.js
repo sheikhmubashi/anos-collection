@@ -330,7 +330,7 @@ function Layout({ title, description, children }) {
           <div style={{ 'color': 'white' }}>
             <h1>Payment Method</h1>
             <p>Cash on delivery</p>
-            <p>Bank transfer</p>
+            <p>Bank transfer</p> 
           </div>
         </footer>
         <div style={{ 'color': 'white', 'backgroundColor': 'black', 'textAlign': 'center', 'marginTop': '-20px' }}>
