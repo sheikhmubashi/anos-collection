@@ -69,12 +69,12 @@ function Profile() {
             <Grid container spacing={1}>
                 <Grid item md={3} xs={12}>
                     <Card className={classes.section}>
-                        <List>
+                        <List> 
                             <NextLink href="/profile" passHref>
                                 <ListItem selected button component="a">
                                     <ListItemText primary="User Profile"></ListItemText>
                                 </ListItem>
-                            </NextLink>
+                            </NextLink> 
                             <NextLink href="/order-history" passHref>
                                 <ListItem button component="a">
                                     <ListItemText primary="Order History"></ListItemText>
